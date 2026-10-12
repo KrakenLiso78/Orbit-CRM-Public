@@ -41,4 +41,10 @@ Success: zero private content or original installation identifiers; all selected
 
 ## Success criteria
 
+## Independent installation documentation
+
+- PUB-017: A new installer can identify prerequisites, create their own empty Supabase project and Auth owner, apply the distributed migrations, register that owner, configure only their own frontend URL/publishable key and reach an empty private dashboard. Documentation distinguishes browser setup from optional conversational/research/scheduling services, warns against destructive resets and private-instance configuration reuse, and names security/backup checks before real data.
+
+Acceptance: given no access to the creator's infrastructure or files, the README provides a complete ordered path using only public source and the installer's own services, states honest validation bounds and explains common missing-configuration/owner/migration errors without proposing weaker authorisation.
+
 Zero included private records or original deployment identifiers; zero unreviewed secret findings; independent history; successful source tests, lint, type checking and build; isolated database replay and access checks recorded separately from source-only checks.

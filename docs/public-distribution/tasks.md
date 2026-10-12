@@ -1,5 +1,10 @@
 # Public distribution tasks
 
+## Independent installation guide
+
+- [x] P019 Specify independent onboarding and privacy outcomes in `spec.md`, then plan documentation validation in `plan.md` before editing README (PUB-017).
+- [ ] P020 Update README prerequisites, own-project migrations/Auth owner, ignored frontend configuration, first sign-in, optional bridge/hosting, safe upgrades and troubleshooting; validate links, commands, public content and secret scan, publish docs only and verify anonymous readback/private-origin visibility (PUB-017).
+
 ## Controlled update
 
 - [x] P011 Specify observable update outcomes and boundaries in `spec.md` before implementation (PUB-012–016).

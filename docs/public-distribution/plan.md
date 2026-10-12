@@ -1,5 +1,9 @@
 # Public distribution plan
 
+## Installation-guide documentation (PUB-017)
+
+Maintain an ordered README path using the existing public migrations, empty environment examples, Auth owner/profile gate and pinned web package. Validate command syntax against the CLI and official docs; inspect grants, private Storage and bridge requirements. Use placeholders only for project reference, URL, key and owner UUID. Do not provision a cloud project or inspect the private installation while writing the guide. Source/runtime acceptance remains the dated release evidence, not a new hosted-installation claim.
+
 ## Controlled update design (PUB-012–016)
 
 Freeze a committed source revision and export only CRM page/client/localisation, generic MCP cancellation metadata, six additive migrations and three synthetic SQL files. Retain earlier public migration repairs, dependency override, neutral authentication service name, hosting configuration and synthetic company registry. Do not overwrite existing public migrations from private files.
