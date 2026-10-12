@@ -1,0 +1,11 @@
+{
+  "name": "@orbit-crm/safe-glob",
+  "version": "1.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": "./index.mjs",
+  "dependencies": {
+    "tinyglobby": "0.2.17"
+  }
+}

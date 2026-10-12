@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" role="img" aria-labelledby="title">
+  <title id="title">Orbit CRM</title>
+  <g transform="translate(8 8)">
+    <rect width="64" height="64" rx="18" fill="#102f2b"/>
+    <circle cx="32" cy="32" r="18" fill="none" stroke="#d9f89a" stroke-width="4"/>
+    <circle cx="50" cy="32" r="5" fill="#b9ead7"/>
+    <circle cx="32" cy="32" r="6" fill="#d9f89a"/>
+  </g>
+  <text x="92" y="54" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.5" fill="#102f2b">Orbit</text>
+  <text x="216" y="53" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" letter-spacing="1" fill="#59646e">CRM</text>
+</svg>

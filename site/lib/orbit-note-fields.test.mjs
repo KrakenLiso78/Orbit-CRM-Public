@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {parseNoteFields} from './orbit-note-fields.mjs';
+const note = '# Example\n\nEmpresa: EPAM (https://example.com/company)\nNotas: Recorded narrative\ncontinues here\nPróximo paso: Follow up\nRiesgo: Medio';
+const result = parseNoteFields(note,'Example');
+assert.equal(result.text,'');
+assert.deepEqual(result.entries.map(x=>x.label),['Empresa','Notas','Próximo paso','Riesgo']);
+assert.equal(result.entries[1].value,'Recorded narrative\ncontinues here');
+assert.equal(result.entries[0].value,'EPAM (https://example.com/company)');
+assert.equal(parseNoteFields('https://example.com\nPlain narrative').text,'https://example.com\nPlain narrative');
+assert.equal(parseNoteFields('No structured fields').entries.length,0);
+console.log('Imported note structure: passed');
