@@ -31,6 +31,38 @@ Orbit CRM is the source of truth. The conversational assistant and web interface
 
 The foundational journey is **capture an interaction → recover context → review a follow-up → complete it → retain history**. The dashboard exposes upcoming tasks, recent interactions, completed tasks, opportunities and applications; additional views show assessed jobs, market signals and execution history. Recorded narrative text retains its source language while interface labels support English and Spanish.
 
+## Workflow details in this distribution
+
+### Context, follow-ups and application history
+
+Record dialogs recover owner-scoped context and structure recorded notes without rewriting the original text. The task editor supports comments and controlled state changes through versioned business operations, with authoritative readback, retry keys and conflict detection. Stored priority and application totals describe recorded CRM information; they do not establish a candidate decision or an action's completion.
+
+Application history preserves explicitly recorded submissions and outcomes independently of job-posting availability. A disappeared or closed vacancy must not become a rejection or withdrawal by inference. Exact material and profile versions remain historical references even when the installer adds newer versions.
+
+Pursuing an eligible monitored posting creates or reuses one linked opportunity, verifies the result, refreshes the CRM and opens the recorded official source for manual submission. It does not submit or record an application on the candidate's behalf. Dismissing a role retains its history rather than deleting the underlying evidence.
+
+### Source radar and fit assessment
+
+The source radar exposes the configured company sources, cadence, actual check freshness and coverage state separately from shortlisted vacancies. Registering a careers source is not proof of exhaustive vacancy discovery. Blocked, unavailable or manual-review sources must retain their limitations; incomplete enumeration is not evidence of zero vacancies or complete recall.
+
+Fit assessment uses the installer's own approved profile and versioned rubric. Geography, work arrangement, role priorities, evidence gaps and confidence should be explicit rather than inferred. Discovery and candidate decisions remain separate from scoring: a low score does not erase a discovered role, and a high score does not establish a submission. The public distribution contains no creator profile, personal location preference or installed scoring configuration.
+
+Market-signal views preserve source links, dates and suggested actions. Execution history distinguishes successful, partial and failed runs and their recorded outcomes. A partial research run cannot silently promote itself to a validated analytical baseline. No private quarterly report, financial dataset or historical company forecast is supplied with this source.
+
+### Optional weekly career guidance
+
+The shipped schema and conversational bridge provide `get_weekly_career_guidance_context`, `record_weekly_career_guidance` and `read_back_weekly_career_guidance`. A configured authorised workflow can prepare exactly three ranked, evidence-bounded actions and persist them through the reviewed atomic operation. The current payload contract requires Spanish action reasons and next steps; the surrounding application interface remains bilingual.
+
+The operation can create, reuse or update supported tasks and existing opportunity planning fields or evidence-supported lifecycle state. It cannot change contacts, applications or application outcomes, materials, or send messages. Equivalent open tasks should be reused; uncertain or stale evidence should lead to verification or waiting rather than an unsupported closure. Exact replay returns the original result instead of duplicating the plan or its effects.
+
+This is a business-operation foundation, not a bundled autonomous advisor or an active weekly schedule. Each installer must configure their own reasoning workflow, authorisation and optional scheduler, then verify actual execution and readback. A configured schedule or a manual run does not prove that a scheduled run completed.
+
+### Snapshot compatibility
+
+This README describes the reviewed public source, not every later increment in private development. The newer all-state application register and combined filters, distinct employer-cancellation event, priority-first task ordering and coloured priority badges, revised dashboard lane arrangement, and executive 25-company graphic are not included in this snapshot. The public landing page and synthetic company example must not be interpreted as a copy of an operational market review or a preconfigured 25-company radar.
+
+Those changes would require a separate reviewed code export and validation before they could be documented as available here. Updating this README does not import private code changes, data, deployment state, scheduled-run results or acceptance evidence.
+
 ## Architecture and operating boundaries
 
 Supabase PostgreSQL holds the CRM record, Auth establishes the user session, and private Storage protects materials. Owner-scoped database policies and business operations enforce the record boundary. A web host's audience controls do not replace database or Storage authorisation; each installation must verify both.
