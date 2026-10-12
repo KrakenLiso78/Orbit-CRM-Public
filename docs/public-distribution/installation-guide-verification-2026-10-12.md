@@ -15,4 +15,4 @@ PUB-017 was specified, planned and decomposed before README changes. Documentati
 
 This is command/schema/documentation verification, not a newly completed cloud installation or hosted deployment. The earlier isolated release evidence remains the source/runtime baseline. Each installer must verify their own project, permissions, owner identity, service configuration, access controls and backups before entering personal data. The guide includes no original instance credential, private URL, owner identifier or dataset.
 
-Publication/readback is recorded by task P020 after the documentation push. Original private repository visibility must remain PRIVATE.
+Published documentation commit: `58b08f8`. Unauthenticated raw README readback matched local SHA-256 `de6cb25ffe3f4f5ac577af7adc1e38749915c32fefc7be206eb0281f14fffb51`. The original development repository was read back as PRIVATE after the push. P020 records completed documentation publication; no application or database change occurred.

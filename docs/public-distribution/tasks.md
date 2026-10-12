@@ -3,7 +3,7 @@
 ## Independent installation guide
 
 - [x] P019 Specify independent onboarding and privacy outcomes in `spec.md`, then plan documentation validation in `plan.md` before editing README (PUB-017).
-- [ ] P020 Update README prerequisites, own-project migrations/Auth owner, ignored frontend configuration, first sign-in, optional bridge/hosting, safe upgrades and troubleshooting; validate links, commands, public content and secret scan, publish docs only and verify anonymous readback/private-origin visibility (PUB-017).
+- [x] P020 Update README prerequisites, own-project migrations/Auth owner, ignored frontend configuration, first sign-in, optional bridge/hosting, safe upgrades and troubleshooting; validate links, commands, public content and secret scan, publish docs only and verify anonymous readback/private-origin visibility (PUB-017). Evidence: `installation-guide-verification-2026-10-12.md`; unauthenticated README hash matched and private origin was read back as PRIVATE.
 
 ## Controlled update
 
