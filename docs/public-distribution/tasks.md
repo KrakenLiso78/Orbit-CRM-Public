@@ -1,5 +1,16 @@
 # Public distribution tasks
 
+## Controlled update
+
+- [x] P011 Specify observable update outcomes and boundaries in `spec.md` before implementation (PUB-012–016).
+- [x] P012 Plan selective export, synthetic market demo, isolated validation and publication in `plan.md` after specification (PUB-012–016).
+- [x] P013 Export `site/app/crm/`, `site/lib/orbit-crm.ts`, localisation, MCP cancellation metadata and six new migrations/three SQL regressions; preserve all public-only repairs and neutral configuration (PUB-012–013/PUB-015–016).
+- [x] P014 Port `site/app/rank-flow.tsx`, `site/lib/rank-flow.mjs` and types; author synthetic fixtures and `/demo/market` with bilingual narrative-first layout and filterable companies (PUB-014).
+- [x] P015 Run source/privacy/history/dependency/build checks and add regressions for the demo and register filters; fix candidate-only issues without touching the private checkout (PUB-012–016).
+- [x] P016 Replay the complete schema into an isolated empty backend; run all synthetic SQL and actual owner/foreign/anonymous Auth/REST/Storage checks (PUB-015).
+- [x] P017 Verify synthetic desktop/narrow ES/EN browser journeys, register filtering/context, priority badges and demo ordering/overflow; record bounded evidence under `docs/public-distribution/` (PUB-012–015).
+- [ ] P018 Update README availability statements, commit/push public source only, verify anonymous readback and unchanged private-origin visibility, then tear down identified temporary services (PUB-016).
+
 - [x] P001 Record approved outcome, boundaries and acceptance (PUB-001–007).
 - [x] P002 Export allowlisted source and replace instance-specific configuration/data (PUB-001–004).
 - [x] P003 Review literals, assets, metadata and run content/secret scans (PUB-002–005).

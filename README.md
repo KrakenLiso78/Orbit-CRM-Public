@@ -37,7 +37,9 @@ The foundational journey is **capture an interaction → recover context → rev
 
 Record dialogs recover owner-scoped context and structure recorded notes without rewriting the original text. The task editor supports comments and controlled state changes through versioned business operations, with authoritative readback, retry keys and conflict detection. Stored priority and application totals describe recorded CRM information; they do not establish a candidate decision or an action's completion.
 
-Application history preserves explicitly recorded submissions and outcomes independently of job-posting availability. A disappeared or closed vacancy must not become a rejection or withdrawal by inference. Exact material and profile versions remain historical references even when the installer adds newer versions.
+The Applications tab provides the complete owner register with combined company, state, text, channel and inclusive submission-date filters, reset and record-context opening. Application history preserves explicitly recorded submissions and outcomes independently of job-posting availability. Rejected, withdrawn and cancelled records leave the current dashboard lane but remain in the register, history and total KPI. Cancellation means the employer cancels recruitment; withdrawal means the candidate leaves the process. A disappeared or closed vacancy must not become either outcome by inference. Exact material and profile versions remain historical references even when the installer adds newer versions.
+
+Upcoming tasks sort by numeric priority before due date and before the display limit. Text badges identify priority, including an explicit missing value; colour is supplemental. Tasks, recent interactions and completed tasks precede opportunities and applications on desktop and narrow layouts.
 
 Pursuing an eligible monitored posting creates or reuses one linked opportunity, verifies the result, refreshes the CRM and opens the recorded official source for manual submission. It does not submit or record an application on the candidate's behalf. Dismissing a role retains its history rather than deleting the underlying evidence.
 
@@ -59,9 +61,9 @@ This is a business-operation foundation, not a bundled autonomous advisor or an 
 
 ### Snapshot compatibility
 
-This README describes the reviewed public source, not every later increment in private development. The newer all-state application register and combined filters, distinct employer-cancellation event, priority-first task ordering and coloured priority badges, revised dashboard lane arrangement, and executive 25-company graphic are not included in this snapshot. The public landing page and synthetic company example must not be interpreted as a copy of an operational market review or a preconfigured 25-company radar.
+This reviewed update includes the all-state application register and combined filters, distinct employer-cancellation event, priority-first task ordering and text/colour priority badges, and revised dashboard lane arrangement. The generic company range graphic is available at `/demo/market` with 25 newly authored fictional examples, bilingual narrative-before-graphic ordering, responsive full-width narrative and a filterable company list. Missing values remain explicitly missing. The demonstration never queries a backend and is not a real market report, company selection, forecast or preconfigured careers radar.
 
-Those changes would require a separate reviewed code export and validation before they could be documented as available here. Updating this README does not import private code changes, data, deployment state, scheduled-run results or acceptance evidence.
+No original quarterly analysis, personal scoring rubric, installed schedule or private execution result is supplied. Future changes still require a separate reviewed code export and validation. The public landing page remains neutral; an installer must provision their own private service and data.
 
 ## Architecture and operating boundaries
 
@@ -100,7 +102,7 @@ The original private planning documents, operational reports and historical inpu
 
 ## Validated release baseline
 
-The published baseline passed 24 Node regressions, lint, TypeScript and production build checks. In an isolated empty Supabase environment, all 40 migrations and 16 SQL regression files passed, alongside 18 Auth/REST/Storage checks and synthetic owner, signed-out and wrong-owner browser journeys. See the [verification record](docs/public-distribution/verification.md) for the exact evidence and limitations. These results do not certify a future installation or close its backup, restore and incident-response obligations.
+The initial baseline passed 24 Node regressions, lint, TypeScript and production build checks, 40 migrations, 16 SQL files and 18 local service-access checks; its [verification record](docs/public-distribution/verification.md) is retained unchanged. The controlled feature update passed 32 Node regressions, lint, TypeScript, production build, 46 migrations, 19 SQL regression files, 21 actual local service-access checks and synthetic responsive browser journeys. See the [update verification](docs/public-distribution/update-verification-2026-10-12.md) for exact scope and limitations. These results do not certify a future installation or close its backup, restore and incident-response obligations.
 
 The complete dependency audit reported zero vulnerabilities for that validated baseline; this is a dated result, not a guarantee about future advisories. A bounded local adapter backed by pinned `tinyglobby` replaces the former vulnerable `fast-glob` chain. It implements the synchronous compiler API only; future dependency updates must rerun its compatibility and adversarial-pattern tests.
 
@@ -132,6 +134,8 @@ The application requires Supabase PostgreSQL, Auth and private Storage. The `sup
 Create your own Auth user and corresponding `crm_owner_profiles` row using trusted administrative setup. Only a profile's authenticated owner should access its records. Keep sign-ups restricted to your intended users. Configure only your own URL and publishable key in the browser. Verify anonymous, wrong-owner and Storage access before adding personal data. Source-only tests do not validate an installed database or its access controls.
 
 The example company universe is deliberately synthetic. Replace it with your own approved company configuration in your private installation. No scheduled research or AI provider is configured or activated by cloning this repository.
+
+Existing installations of the initial public baseline need the six additive migrations dated `20261012130000` through `20261012180000`, in filename order, before running the updated UI. Test upgrades against a disposable copy with your own backup/restore procedure first. Do not reapply historical migrations or import the creator's database; the repaired context migration also accepts the already-correct initial public definition.
 
 ## Optional conversational bridge
 

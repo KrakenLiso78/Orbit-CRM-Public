@@ -1,8 +1,8 @@
 // Translate controlled display values; retain original notes and unknown source text.
 const labels = {
-  submitted: ['Enviada', 'Submitted'], rejected: ['Rechazada', 'Rejected'], interview: ['Entrevista', 'Interview'], withdrawn: ['Retirada', 'Withdrawn'], offer: ['Oferta recibida', 'Offer received'], accepted: ['Aceptada', 'Accepted'], reopened: ['Reabierta', 'Reopened'], follow_up: ['Seguimiento', 'Follow-up'], correction: ['Corrección', 'Correction'], other: ['Otro', 'Other'],
+  submitted: ['Enviada', 'Submitted'], rejected: ['Rechazada', 'Rejected'], interview: ['Entrevista', 'Interview'], cancelled: ['Cancelada', 'Cancelled'], withdrawn: ['Retirada', 'Withdrawn'], offer: ['Oferta recibida', 'Offer received'], accepted: ['Aceptada', 'Accepted'], reopened: ['Reabierta', 'Reopened'], follow_up: ['Seguimiento', 'Follow-up'], correction: ['Corrección', 'Correction'], other: ['Otro', 'Other'],
   commented: ['Comentario', 'Comment'],
-  created: ['Creada', 'Created'], postponed: ['Pospuesta', 'Postponed'], started: ['Iniciada', 'Started'], completed: ['Completada', 'Completed'], blocked: ['Bloqueada', 'Blocked'], cancelled: ['Cancelada', 'Cancelled'], corrected: ['Corregida', 'Corrected'],
+  created: ['Creada', 'Created'], postponed: ['Pospuesta', 'Postponed'], started: ['Iniciada', 'Started'], completed: ['Completada', 'Completed'], blocked: ['Bloqueada', 'Blocked'], corrected: ['Corregida', 'Corrected'],
   '0-Backlog': ['Pendiente', 'Backlog'], '1-En curso': ['En curso', 'In progress'], '2-Completada': ['Completada', 'Completed'], '3-Bloqueada': ['Bloqueada', 'Blocked'], '4-Cancelada': ['Cancelada', 'Cancelled'],
   'Contacto hecho': ['Contacto hecho', 'Contact made'], 'Nueva': ['Nueva', 'New'], 'Archivada': ['Archivada', 'Archived'], 'Usada en outreach': ['Usada en contacto profesional', 'Used in outreach'],
   open: ['Abierta', 'Open'], closed: ['Cerrada', 'Closed'], unknown: ['Desconocido', 'Unknown'], unavailable: ['No disponible', 'Unavailable'],

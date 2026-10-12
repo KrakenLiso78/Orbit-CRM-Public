@@ -28,10 +28,13 @@ begin
   perform set_config('request.jwt.claim.role', 'authenticated', true);
   execute 'set local role authenticated';
   v_snapshot := public.get_dashboard_snapshot(8, 8);
+  if jsonb_array_length(v_snapshot -> 'recent_applications') <> 0 then
+    raise exception 'Rejected application remained in current dashboard';
+  end if;
   select value into v_item
-  from jsonb_array_elements(v_snapshot -> 'recent_applications') value
+  from jsonb_array_elements(public.get_application_register()) value
   where value ->> 'id' = v_application::text;
-  if v_item is null then raise exception 'Owner dashboard application is missing'; end if;
+  if v_item is null then raise exception 'Owner historical application register is missing'; end if;
   if v_item ->> 'current_state' <> 'rejected' then
     raise exception 'Incorrect current state: %', v_item ->> 'current_state';
   end if;

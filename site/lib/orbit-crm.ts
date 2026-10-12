@@ -1,6 +1,7 @@
 import { parseDashboardSnapshot, parseJobPostingPromotion, parseMvpSnapshot } from './orbit-crm-contract.mjs';
 import { readLatestProcessExecutions, mergeExecutionHistory } from './orbit-execution-history.mjs';
 import { readJobRadar } from './orbit-job-radar.mjs';
+import { parseApplicationRegister } from './application-filters.mjs';
 import cohort from './pharma-top25.json';
 
 export type OrbitSession = {
@@ -142,6 +143,14 @@ export async function getDashboardSnapshot(): Promise<DashboardSnapshot> {
   const body = await response.json().catch(() => null);
   if (!response.ok || !body || typeof body !== 'object') throw new Error('The CRM dashboard could not be loaded.');
   return parseDashboardSnapshot(body) as DashboardSnapshot;
+}
+
+export async function getApplicationRegister(): Promise<DashboardSnapshot['recent_applications']> {
+ const {supabase,token}=await accessToken();
+ const response=await fetch(`${supabase.url}/rest/v1/rpc/get_application_register`,{method:'POST',headers:{apikey:supabase.key,Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:'{}'});
+ const body=await response.json().catch(()=>null);
+ if(!response.ok) throw new Error('Application register unavailable');
+ return parseApplicationRegister(body);
 }
 
 export async function getMvpSnapshot(): Promise<MvpSnapshot> {
