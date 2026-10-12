@@ -1,6 +1,6 @@
 # Public source candidate verification
 
-Status: source baseline validated for the separately authorised public repository. GitHub creation and anonymous readback are the final checks.
+Status: published and verified at [Orbit-CRM-Public](https://github.com/KrakenLiso78/Orbit-CRM-Public) on 12 October 2026.
 
 ## Passed
 
@@ -32,8 +32,16 @@ Repeated validation passed: clean offline `npm ci`, complete npm audit with zero
 
 The empty local Supabase replay, all 16 SQL regression files, optional-helper guard and all 18 Auth/REST/Storage checks were repeated successfully. Browser checks confirmed the owner sees its synthetic task and context, logout removes record content, and a different owner sees zero foreign companies/tasks. Local runtime credentials and fixtures are excluded from the source baseline.
 
-## Pending
+## Public readback
 
-- Creation/publication of the separate GitHub repository and anonymous clone/readback.
+- GitHub visibility: PUBLIC; default branch: `main`; detected license: GNU AGPLv3.
+- Baseline public commit: `98ff671e85a4629f569236234c95383c37ae6373`, created from the final reviewed export with no preparation or private development history.
+- Clean unauthenticated Git clone succeeded with credential helpers and prompting disabled. Its commit matched the uploaded baseline exactly.
+- All 119 source files passed the content checker. The complete independent public history passed Gitleaks with no findings. Original private installation and application identifiers had zero matches.
+- The anonymous clone passed clean `npm ci`, all 24 Node tests, lint and TypeScript checks.
+- The existing development repository was read back as PRIVATE before and after publication. No production database, Storage object, private deployment or private Git reference was changed.
+- Public data examples and tests are synthetic. No compiled artifacts, environment credentials, original deployment bindings, real records, CVs, reports, backups, screenshots or operational logs are distributed.
+
+Every future update requires an explicit reviewed source export and fresh checks. Repository publication does not provide access to any existing installation or its records.
 
 Build results validate the exported source, not an installed Supabase service. Secret and identifier scanners supplement source review and do not prove absolute privacy for future arbitrary changes. Every update requires a fresh reviewed export.

@@ -10,7 +10,7 @@
 - [x] P005c Pin available compatible dependency fixes and assess remaining advisories before publication (PUB-009). `fflate` patched and the vulnerable glob chain replaced; complete audit reports zero vulnerabilities.
 - [x] P005d Verify application/task context fields and final supported/exclusive relationships (PUB-010).
 - [x] P006 Initialise independent public history with neutral identity and audit all objects (PUB-001).
-- [ ] P007 Create separate GitHub repository; verify anonymous clone, license, content and private origin visibility (PUB-006).
-- [ ] P008 Record public verification and future controlled export policy (PUB-007).
+- [x] P007 Create separate GitHub repository; verify anonymous clone, license, content and private origin visibility (PUB-006). Public `main` baseline matched the unauthenticated clone, AGPLv3 was detected and the existing development repository remained PRIVATE.
+- [x] P008 Record public verification and future controlled export policy (PUB-007).
 - [x] P009 Implement the bounded glob adapter; test compatibility and malicious-pattern rejection, regenerate the lockfile and require a zero-finding complete npm audit (PUB-011).
 - [x] P010 Repeat source/privacy/history checks, build, local runtime and isolated database/API regression before publication (PUB-005/PUB-011). Clean installation, 24 Node tests, lint/types/build, 40 migrations, 16 SQL files, 18 service-level access checks and owner/logout/wrong-owner browser journeys passed.

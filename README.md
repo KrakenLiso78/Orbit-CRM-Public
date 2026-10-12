@@ -43,7 +43,7 @@ The macOS bridge under `integrations/supabase/call-report-mcp/` reads your own `
 
 Each installer owns the responsibility for hosting costs, backups, access control, data processing and incidents. No creator-operated service or incident support is promised. Any selected input sent to an external model is processed by that provider. No analytics or automated public mirroring of private records is configured.
 
-Update this public project only by reviewing explicit source exports. Keep records, credentials, exports, screenshots and operational evidence outside source control. See `docs/public-distribution/` for the distribution requirements and pending acceptance gates.
+Update this public project only by reviewing explicit source exports. Keep records, credentials, exports, screenshots and operational evidence outside source control. See `docs/public-distribution/` for the distribution requirements and verified release baseline.
 
 ## License
 
