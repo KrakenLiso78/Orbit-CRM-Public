@@ -1,6 +1,6 @@
 # Controlled feature update verification — 2026-10-12
 
-Status: validation passed; public push and anonymous readback pending.
+Status: published and verified at [Orbit-CRM-Public](https://github.com/KrakenLiso78/Orbit-CRM-Public).
 
 ## Scope and governance
 
@@ -25,7 +25,15 @@ Prior public-only portable helper/policy/context repairs and the bounded patched
 - Market demo: 25 graphic identities and 25 list entries; filtering selected one list entry and reset restored 25 without altering chart coverage. Narrative preceded graphic and list. ES/EN desktop and 390 × 844 checks had no page-level horizontal overflow; narrative used 32 px desktop and 21 px narrow type with no width cap. CRM ES/EN responsive views also passed; the neutral logo loaded.
 - Content allowlist, staged-secret scan and original private identifier comparison passed. Tracked source and the unconfigured build had no original installation or private application identifier matches. Generated output, credentials, container settings, logs and screenshots are excluded from Git.
 
-## Bounds
+## Publication and teardown
+
+- Public feature commit: `f10d56e3f33f47f77022091ca965e1acdbb77825`; GitHub visibility PUBLIC and detected license GNU AGPLv3.
+- Unauthenticated clone with credential helpers and prompting disabled matched the uploaded commit and tree `9065bf153c3e036fc5ac8cb8e36e3af734de5670` exactly. Its clean npm installation, 32 Node tests, lint, TypeScript and production build passed.
+- All 142 tracked text files passed the public-content checker. Complete public history passed the redacted secret scan; original installation/private application identifiers had zero matches in source and the unconfigured build.
+- The private development repository was read back as PRIVATE after publication. No private visibility, production data, deployment, credential or automation was changed by this update.
+- Owned preview sessions and browser tabs were closed; temporary viewport overrides were reset. The identified isolated Supabase containers/volumes and temporary virtual machine were destroyed. Local credential fixture and startup/reset logs were removed; no real data was deleted.
+
+## Remaining bounds
 
 This verifies the distributed source using new synthetic users and records. It does not verify the private production installation, a future installer's backups/restore, revoked-session browser behaviour, every possible failure path, exhaustive research recall or autonomous scheduled execution. No private Site was deployed, no production database was queried or mutated, and no actual application decision or communication occurred.
 

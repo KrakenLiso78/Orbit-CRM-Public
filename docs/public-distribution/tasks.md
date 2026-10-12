@@ -9,7 +9,7 @@
 - [x] P015 Run source/privacy/history/dependency/build checks and add regressions for the demo and register filters; fix candidate-only issues without touching the private checkout (PUB-012–016).
 - [x] P016 Replay the complete schema into an isolated empty backend; run all synthetic SQL and actual owner/foreign/anonymous Auth/REST/Storage checks (PUB-015).
 - [x] P017 Verify synthetic desktop/narrow ES/EN browser journeys, register filtering/context, priority badges and demo ordering/overflow; record bounded evidence under `docs/public-distribution/` (PUB-012–015).
-- [ ] P018 Update README availability statements, commit/push public source only, verify anonymous readback and unchanged private-origin visibility, then tear down identified temporary services (PUB-016).
+- [x] P018 Update README availability statements, commit/push public source only, verify anonymous readback and unchanged private-origin visibility, then tear down identified temporary services (PUB-016). Evidence: `update-verification-2026-10-12.md`; anonymous clone installation/tests/lint/types/build passed, private origin remains PRIVATE and the temporary runtime was destroyed.
 
 - [x] P001 Record approved outcome, boundaries and acceptance (PUB-001–007).
 - [x] P002 Export allowlisted source and replace instance-specific configuration/data (PUB-001–004).
